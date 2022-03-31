@@ -109,9 +109,3 @@ class Author(models.Model):
         """String for representing the Model object."""
         return f'{self.last_name}, {self.first_name}'
         
-from languages.fields import LanguageField
-
-class Language(models.Model):
-    title = models.CharField(max_length=255)
-    text = models.TextField()       
-    name = models.CharField(max_length=50, default="" ) 
