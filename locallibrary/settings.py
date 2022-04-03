@@ -42,7 +42,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 #export DJANGO_DEBUG=False
 ALLOWED_HOSTS = ['localhost',
-  '127.0.0.1','www.heroku.com']
+  '127.0.0.1','www.heroku.com','https://rowalibr.herokuapp.com/catalog/']
 
 # Application definition
 
