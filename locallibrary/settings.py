@@ -15,7 +15,6 @@ import os # needed by code below
 import os
 import sys
 import logging
-
 import django_heroku
 
 
@@ -170,7 +169,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-DISABLE_COLLECTSTATIC=1
+#DISABLE_COLLECTSTATIC=1
 
 if os.path.exists('env.py'):
         import env
+        
+
+
+django_heroku.settings(locals())        
